@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+include_recipe "apache2"
+
 case node[:platform]
 when "debian", "ubuntu"
   package "libapache2-mod-php5" do
